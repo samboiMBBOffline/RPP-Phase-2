@@ -31,4 +31,15 @@ public class tapNO {
 			Mobile.tap(findTestObject('TickButton'),0)
 		}
 	}
+
+	static void amount(String Text) {
+
+		if(Mobile.verifyElementExist(findTestObject('Text',[('Verify'):'Enter amount']),3,FailureHandling.OPTIONAL)) {
+			int i = 0
+			for (i=0;i<6;i++) {
+				Mobile.tap(findTestObject('Text',[('Verify'):Text[i]]),1)
+			}
+			Mobile.tap(findTestObject('TickButton'),0)
+		}
+	}
 }

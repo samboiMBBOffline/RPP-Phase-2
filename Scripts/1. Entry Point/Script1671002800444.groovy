@@ -46,7 +46,9 @@ if (Mobile.verifyElementExist(fo('Text', [('Verify') : ft('TestData').getValue(4
 
 if (Mobile.verifyElementNotExist(fo('Text', [('Verify') : ft('TestData').getValue(4, 3)]), 3, FailureHandling.OPTIONAL)) {
     Mobile.tap(fo('Text', [('Verify') : ft('TestData').getValue(4, 4)]), 0)
-
+	
+tapNo.pin(ft('UserID').getValue(4, GlobalVariable.pass))
+	
     'remove 4th qa'
     Mobile.tap(fo('Object Repository/Manage/Remove4thQA'), 0)
 
@@ -86,7 +88,7 @@ if (Mobile.verifyElementNotExist(fo('Text', [('Verify') : ft('TestData').getValu
 
 Mobile.tap(fo('Text', [('Verify') : ft('TestData').getValue(4, 3)]), 2)
 
-tapNo.pin(ft('UserID').getValue(4, ID))
+tapNo.pin(ft('UserID').getValue(4, GlobalVariable.pass))
 
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 5)]), 0), ft('TestData').getValue(
         4, 5))
@@ -95,7 +97,7 @@ Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getVal
 
 
 
-if (ft('UserID').getValue(5, ID) == 'SolePropNR') {
+if (GlobalVariable.type == 'soleUR') {
 	
 	'DuitNowRequest exist'
 	Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 5)]), 0),ft('TestData').getValue(4, 5))
@@ -151,10 +153,10 @@ if (ft('UserID').getValue(5, ID) == 'SolePropNR') {
 		Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('EntryPoint').getValue(4, 4)]), 0),ft('EntryPoint').getValue(4, 4))
 		
 	
-    Mobile.callTestCase(findTestCase('1a. DuitNowRequest - SoleProp Registered'), [ID:1], FailureHandling.CONTINUE_ON_FAILURE)
+    Mobile.callTestCase(findTestCase('1a. DuitNowRequest - Validation'), [ID:1], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
-} else if (ft('UserID').getValue(5, ID) == 'Individual') {
+} else if (GlobalVariable.type == 'ind') {
     'DuitNowRequest exist'
     Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 5)]), 0), ft('TestData').getValue(
             4, 5))
