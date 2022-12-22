@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="RunAutoBill" time="18.984" tests="2" failures="0" errors="1">
+   <testsuite name="RunAutoBill" tests="2" failures="0" errors="1" time="18.984" skipped="0" timestamp="2022-12-20 14:42:02" hostname="00139711 - L210605145W10.MAYBANK-MY.MBB.DIR" id="Test Suites/RunAutoBill">
+      <properties>
+         <property name="deviceName" value="OPPO CPH1823 (Android 10)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Users\\00139711\\Documents\\Katalons\\RPP\\Reports\\20221220_144158\\RunAutoBill\\20221220_144158"/>
+         <property name="logFiles" value="D:\\Users\\00139711\\Documents\\Katalons\\RPP\\Reports\\20221220_144158\\RunAutoBill\\20221220_144158\\appium.log, D:\\Users\\00139711\\Documents\\Katalons\\RPP\\Reports\\20221220_144158\\RunAutoBill\\20221220_144158\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="00139711 - L210605145W10.MAYBANK-MY.MBB.DIR"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.1&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="8.5.1.208"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.1"/>
+         <property name="deviceModel" value="CPH1823"/>
+         <property name="hostAddress" value="172.25.130.201"/>
+         <property name="deviceManufacturer" value="OPPO"/>
+         <property name="deviceId" value="N7U869LV456D5S8L"/>
+         <property name="deviceName" value="OPPO CPH1823 (Android 10)"/>
+         <property name="deviceOSVersion" value="10"/>
+      </properties>
+      <testcase name="Test Cases/B. QuickRun" time="17.967" classname="Test Cases/B. QuickRun" status="PASSED">
+         <system-out><![CDATA[2022-12-20 14:42:02 - [TEST_CASE][PASSED] - Test Cases/B. QuickRun: Test Cases/B. QuickRun
+
+2022-12-20 14:42:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("A. Start"), ["ID":1], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/A. Start' successfully
+
+2022-12-20 14:42:03 - [TEST_CASE][PASSED] - Test Cases/A. Start: Test Cases/A. Start
+
+2022-12-20 14:42:03 - [TEST_STEP][PASSED] - if (ID == 1): Starting app with application ID: 'com.maybank2u.life.dev'
+
+2022-12-20 14:42:03 - [TEST_STEP][PASSED] - startExistingApplication("com.maybank2u.life.dev", STOP_ON_FAILURE): Starting app with application ID: 'com.maybank2u.life.dev'
+
+2022-12-20 14:42:04 - [MESSAGE][INFO] - User set preference: ['androidScreenshotPath', '/Screenshot']
+
+2022-12-20 14:42:04 - [MESSAGE][INFO] - User set preference: ['noReset', 'true']
+
+2022-12-20 14:42:04 - [MESSAGE][INFO] - User set preference: ['AppWaitActivity', '*']
+
+2022-12-20 14:42:04 - [MESSAGE][INFO] - User set preference: ['deviceId', 'N7U869LV456D5S8L']
+
+2022-12-20 14:42:04 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-12-20 14:42:06 - [MESSAGE][INFO] - Appium server started on port 59,650
+
+2022-12-20 14:42:20 - [MESSAGE][PASSED] - Starting app with application ID: 'com.maybank2u.life.dev'
+
+2022-12-20 14:42:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/A. Start' successfully
+
+2022-12-20 14:42:20 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("Sprint 2-4/1. Entry Point"), ["ID":1], CONTINUE_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("Sprint 2-4/1. Entry Point"), ["ID":1], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("Sprint 2-4/1. Entry Point"), ["ID":1], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("Sprint 2-4/1a. DuitNowRequest - Validation"), ["ID":1], CONTINUE_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("Sprint 2-4/1a. DuitNowRequest - Validation"), ["ID":1], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("Sprint 2-4/1a. DuitNowRequest - Validation"), ["ID":1], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("Sprint 2-4/2a. Fav Transaction"), [:], CONTINUE_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("Sprint 2-4/2a. Fav Transaction"), [:], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("Sprint 2-4/2a. Fav Transaction"), [:], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("Sprint 9/Sprint 9 - AutoDebit Entry"), [:], CONTINUE_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("Sprint 9/Sprint 9 - AutoDebit Entry"), [:], CONTINUE_ON_FAILURE)
+
+2022-12-20 14:42:20 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("Sprint 9/Sprint 9 - AutoDebit Entry"), [:], CONTINUE_ON_FAILURE)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction" time="0.708" classname="Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction" status="ERROR">
+         <error type="ERROR" message="Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/D:/Users/00139711/Documents/Katalons/RPP/Scripts/Sprint%209/Sprint%209%20-%20AutoDebit%20Transaction/Script1671516356762.groovy: 25: unable to resolve class Rectangle 
+ @ line 25, column 38.
+   Mobile.takeAreaScreenshot('test.png',new Rectangle(0, 0, Mobile.getDeviceWidth(), Mobile.getDeviceHeight()), FailureHandling.CONTINUE_ON_FAILURE)
+                                        ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1671518518579.run(TempTestSuite1671518518579.groovy:36)
+"/>
+         <system-out><![CDATA[2022-12-20 14:42:20 - [TEST_CASE][ERROR] - Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction: Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/D:/Users/00139711/Documents/Katalons/RPP/Scripts/Sprint%209/Sprint%209%20-%20AutoDebit%20Transaction/Script1671516356762.groovy: 25: unable to resolve class Rectangle 
+ @ line 25, column 38.
+   Mobile.takeAreaScreenshot('test.png',new Rectangle(0, 0, Mobile.getDeviceWidth(), Mobile.getDeviceHeight()), FailureHandling.CONTINUE_ON_FAILURE)
+                                        ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1671518518579.run(TempTestSuite1671518518579.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-12-20 14:42:20 - [TEST_CASE][ERROR] - Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction: Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/D:/Users/00139711/Documents/Katalons/RPP/Scripts/Sprint%209/Sprint%209%20-%20AutoDebit%20Transaction/Script1671516356762.groovy: 25: unable to resolve class Rectangle 
+ @ line 25, column 38.
+   Mobile.takeAreaScreenshot('test.png',new Rectangle(0, 0, Mobile.getDeviceWidth(), Mobile.getDeviceHeight()), FailureHandling.CONTINUE_ON_FAILURE)
+                                        ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1671518518579.run(TempTestSuite1671518518579.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-20 14:42:02 - [TEST_SUITE][ERROR] - RunAutoBill: Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/D:/Users/00139711/Documents/Katalons/RPP/Scripts/Sprint%209/Sprint%209%20-%20AutoDebit%20Transaction/Script1671516356762.groovy: 25: unable to resolve class Rectangle 
+ @ line 25, column 38.
+   Mobile.takeAreaScreenshot('test.png',new Rectangle(0, 0, Mobile.getDeviceWidth(), Mobile.getDeviceHeight()), FailureHandling.CONTINUE_ON_FAILURE)
+                                        ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1671518518579.run(TempTestSuite1671518518579.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-12-20 14:42:02 - [TEST_SUITE][ERROR] - RunAutoBill: Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/D:/Users/00139711/Documents/Katalons/RPP/Scripts/Sprint%209/Sprint%209%20-%20AutoDebit%20Transaction/Script1671516356762.groovy: 25: unable to resolve class Rectangle 
+ @ line 25, column 38.
+   Mobile.takeAreaScreenshot('test.png',new Rectangle(0, 0, Mobile.getDeviceWidth(), Mobile.getDeviceHeight()), FailureHandling.CONTINUE_ON_FAILURE)
+                                        ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1671518518579.run(TempTestSuite1671518518579.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

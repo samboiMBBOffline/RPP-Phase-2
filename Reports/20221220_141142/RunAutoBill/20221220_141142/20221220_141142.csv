@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+RunAutoBill,,,,2022-12-20 14:11:46,2022-12-20 14:13:22,1m - 36.128s,FAILED
+,,,,,,,
+Test Cases/B. QuickRun,,,,2022-12-20 14:11:46,2022-12-20 14:13:22,1m - 35.770s,FAILED
+"callTestCase(findTestCase(""A. Start""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:11:47,2022-12-20 14:12:08,21.182s,PASSED
+"callTestCase(findTestCase(""Sprint 2-4/1. Entry Point""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:12:08,2022-12-20 14:12:08,0.005s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/1a. DuitNowRequest - Validation""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:12:08,2022-12-20 14:12:08,0.003s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/2a. Fav Transaction""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:12:08,2022-12-20 14:12:08,0.002s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 9/Sprint 9 - AutoDebit Entry""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:12:08,2022-12-20 14:13:22,1m - 14.014s,FAILED

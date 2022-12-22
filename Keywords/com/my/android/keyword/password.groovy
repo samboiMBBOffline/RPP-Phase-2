@@ -24,7 +24,7 @@ public class password {
 
 	static void setText(String Text){
 
-		if(Mobile.verifyElementExist(findTestObject('Text',[('Verify'):'Enter your password']),3,FailureHandling.OPTIONAL)) {
+		if(Mobile.verifyElementExist(findTestObject('Text',[('Verify'):'Enter your password']),10,FailureHandling.OPTIONAL)) {
 
 			Mobile.setText(findTestObject('Input',[('Verify'):'M2U password']),Text,0)
 
