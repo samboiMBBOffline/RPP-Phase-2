@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+RunAutoBill,,,,2022-12-20 14:33:47,2022-12-20 14:34:30,42.879s,FAILED
+,,,,,,,
+Test Cases/B. QuickRun,,,,2022-12-20 14:33:48,2022-12-20 14:34:06,17.821s,PASSED
+"callTestCase(findTestCase(""A. Start""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:33:48,2022-12-20 14:34:06,17.308s,PASSED
+"callTestCase(findTestCase(""Sprint 2-4/1. Entry Point""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:34:06,2022-12-20 14:34:06,0.002s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/1a. DuitNowRequest - Validation""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:34:06,2022-12-20 14:34:06,0.001s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/2a. Fav Transaction""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:34:06,2022-12-20 14:34:06,0.001s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 9/Sprint 9 - AutoDebit Entry""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:34:06,2022-12-20 14:34:06,0.001s,NOT_RUN
+,,,,,,,
+Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction,,,,2022-12-20 14:34:06,2022-12-20 14:34:30,24.723s,FAILED
+"tap(findTestObject(""Text"", [""Verify"":findTestData(""AutoBill"").getValue(4, 8)]), 0)",,tap set autobill,,2022-12-20 14:34:06,2022-12-20 14:34:17,10.861s,FAILED
+"verifyEqual(getText(findTestObject(""Text"", [""Verify"":findTestData(""AutoBill"").getValue(4, 10)]), 0), findTestData(""AutoBill"").getValue(4, 10))",,set up auto billing via duitnow autodebit,,2022-12-20 14:34:17,2022-12-20 14:34:27,10.294s,FAILED
+"takeScreenshot(""Screenshot/AutoBill/"")",,,,2022-12-20 14:34:27,2022-12-20 14:34:29,1.201s,PASSED
+"verifyEqual(getText(findTestObject(""Text"", [""Verify"":findTestData(""AutoBill"").getValue(4, 11)]), 0), findTestData(""AutoBill"").getValue(4, 11))",,Please fill in merchants details,,2022-12-20 14:34:29,2022-12-20 14:34:30,1.582s,FAILED
+"takeAreaScreenshot(findTestObject(findTestObject(""Text"", [""Verify"":""Be Right Back!""])), CONTINUE_ON_FAILURE)",,,,2022-12-20 14:34:30,2022-12-20 14:34:30,0.136s,ERROR

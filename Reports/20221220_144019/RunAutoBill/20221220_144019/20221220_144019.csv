@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+RunAutoBill,,,,2022-12-20 14:40:23,2022-12-20 14:40:52,29.630s,FAILED
+,,,,,,,
+Test Cases/B. QuickRun,,,,2022-12-20 14:40:23,2022-12-20 14:40:41,17.811s,PASSED
+"callTestCase(findTestCase(""A. Start""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:23,2022-12-20 14:40:41,17.332s,PASSED
+"callTestCase(findTestCase(""Sprint 2-4/1. Entry Point""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:41,2022-12-20 14:40:41,0.002s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/1a. DuitNowRequest - Validation""), [""ID"":1], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:41,2022-12-20 14:40:41,0.001s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 2-4/2a. Fav Transaction""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:41,2022-12-20 14:40:41,0.001s,NOT_RUN
+"callTestCase(findTestCase(""Sprint 9/Sprint 9 - AutoDebit Entry""), [:], CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:41,2022-12-20 14:40:41,0.001s,NOT_RUN
+,,,,,,,
+Test Cases/Sprint 9/Sprint 9 - AutoDebit Transaction,,,,2022-12-20 14:40:41,2022-12-20 14:40:52,11.512s,FAILED
+"tap(findTestObject(""Text"", [""Verify"":findTestData(""AutoBill"").getValue(4, 8)]), 0)",,tap set autobill,,2022-12-20 14:40:41,2022-12-20 14:40:52,10.828s,FAILED
+"takeAreaScreenshot(""test.png"", CONTINUE_ON_FAILURE)",,,,2022-12-20 14:40:52,2022-12-20 14:40:52,0.068s,ERROR

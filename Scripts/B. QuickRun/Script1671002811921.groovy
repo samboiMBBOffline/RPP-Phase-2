@@ -19,9 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.callTestCase(findTestCase('A. Start'), [('ID') : 1], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('1. Entry Point'), [('ID') : 1], FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.callTestCase(findTestCase('Sprint 2-4/1. Entry Point'), [('ID') : 1], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('1a. DuitNowRequest - Validation'), [('ID') : 1], FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.callTestCase(findTestCase('Sprint 2-4/1a. DuitNowRequest - Validation'), [('ID') : 1], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('2a. Fav Transaction'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.callTestCase(findTestCase('Sprint 2-4/2a. Fav Transaction'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.callTestCase(findTestCase('Sprint 9/Sprint 9 - AutoDebit Entry'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Sprint 9/Sprint 9 - AutoDebit Transaction'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

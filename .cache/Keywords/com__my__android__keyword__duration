@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "86B1334B16F04F6B761F0CE6CB736C5A",
+  "keywordClasses": [
+    {
+      "name": "com.my.android.keyword.duration",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
