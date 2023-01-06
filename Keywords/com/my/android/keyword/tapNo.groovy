@@ -43,13 +43,13 @@ public class tapNO {
 		}
 	}
 	static void otpApproval(String Text) {
-		
-	if(Mobile.verifyElementExist(findTestObject('Text',[('Verify'):'One Time Password']),3,FailureHandling.OPTIONAL)) {
-		int i = 0
-		for (i=0;i<6;i++) {
-			Mobile.tap(findTestObject('Text',[('Verify'):Text[i]]),1)
+
+		if(Mobile.verifyElementExist(findTestObject('Text',[('Verify'):'One Time Password']),3,FailureHandling.OPTIONAL)) {
+			int i = 0
+			for (i=0;i<6;i++) {
+				Mobile.tap(findTestObject('Text',[('Verify'):Text[i]]),1)
+			}
+			Mobile.tap(findTestObject('TickButton'),0)
 		}
-		Mobile.tap(findTestObject('TickButton'),0)
 	}
-	
 }
