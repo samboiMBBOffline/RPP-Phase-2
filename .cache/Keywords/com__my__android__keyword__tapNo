@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "49DD1B908DCD45E4169127D0045B4FB2",
+  "keywordFileContentHash": "230A97A524B1454A3F3C569BEA188916",
   "keywordClasses": [
     {
       "name": "com.my.android.keyword.tapNO",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

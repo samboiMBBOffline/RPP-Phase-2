@@ -26,99 +26,100 @@ import com.my.android.keyword.verifyEqual as verifyEqual
 def Status
 
 if ((GlobalVariable.type == 'ind') || (GlobalVariable.type == 'soleUR')) {
-    'youve received a request from'
-    Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 19)]), 0), ft('TestData').getValue(
-            4, 19))
-
-    Mobile.takeScreenshot('Screenshot/DetailsPending/1.png')
-
-    VendorName = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 19)]), 0)
-
-    Status = Mobile.getText(fo('FollowingText2', [('Verify') : VendorName]), 0)
-
-    if (Status == 'Incoming') {
-        Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Incoming']), 0), 'Incoming')
-    } else {
-        Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Expiring Soon']), 0), 'Expiring Soon')
-    }
-} 
-else 
-{
+	RequestText = Mobile.getText(findTestObject('TextNo',[('No'):2]),0)
+	
+	switch (RequestText) {
+		
+		case ft('TestData').getValue(4,32):
+			verifyEqual.text(ft('TestData').getValue(4,32))
+		
+			verifyEqual.text(ft('TestData').getValue(4,34))
+			
+		case ft('TestData').getValue(5,32):
+			verifyEqual.text(ft('TestData').getValue(5,32))
+		
+			verifyEqual.text(ft('TestData').getValue(5,34))
+			
+		case ft('TestData').getValue(6,32):
+			verifyEqual.text(ft('TestData').getValue(6,32))
+		
+			verifyEqual.text(ft('TestData').getValue(6,34))
+			
+		case ft('TestData').getValue(7,32):
+			verifyEqual.text(ft('TestData').getValue(7,32))
+		
+			verifyEqual.text(ft('TestData').getValue(7,34))
+		
+	}
+	Mobile.takeScreenshot('Screenshot/PastDetails/1 1.png')
+	
+}
+else {
 	
 	RequestText = Mobile.getText(findTestObject('TextNo',[('No'):2]),0)
-	switch (RequestText) 
-	{
-			
-	case ft('TestData').getValue(4,19):
-
-		'youve received a request'
-		verifyEqual.text(ft('TestData').getValue(4,19))
-			
-		VendorName = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 19)]), 0)
-			
-		Status = Mobile.getText(fo('FollowingText2', [('Verify') : VendorName]), 0)
-			
-		if (Status == 'Incoming') {
-			Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Incoming']), 0), 'Incoming')
-		} else {
-			Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Expiring Soon']), 0), 'Expiring Soon')
-		}	
+	
+	switch (RequestText) {
 		
-	case ft('TestData').getValue(4,19):
+		case ft('TestData').getValue(4,33):
+			verifyEqual.text(ft('TestData').getValue(4,33))
 		
-		'youve received an auto billing request'
-		verifyEqual.text(ft('TestData').getValue(5,19))
+			verifyEqual.text(ft('TestData').getValue(4,34))
 			
-		VendorName = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(5, 19)]), 0)
-			
-		Status = Mobile.getText(fo('FollowingText2', [('Verify') : VendorName]), 0)
-			
-		if (Status == 'Incoming') {
-			Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Incoming']), 0), 'Incoming')
-		} else {
-			Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : 'Expiring Soon']), 0), 'Expiring Soon')
-		}
-			
-	case ft('TestData').getValue(6,19):
+		case ft('TestData').getValue(5,33):
+			verifyEqual.text(ft('TestData').getValue(5,33))
 		
-		'youve sent a request to'
-		verifyEqual.text(ft('TestData').getValue(6,19))
+			verifyEqual.text(ft('TestData').getValue(5,34))
 			
-		VendorName = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(6, 19)]), 0)
+		case ft('TestData').getValue(6,33):
+			verifyEqual.text(ft('TestData').getValue(6,33))
+		
+			verifyEqual.text(ft('TestData').getValue(6,34))
 			
-		Status = Mobile.getText(fo('FollowingText2', [('Verify') : VendorName]), 0)
-			
-		verifyEqual.text(Status)
+		case ft('TestData').getValue(7,33):
+			verifyEqual.text(ft('TestData').getValue(7,33))
+		
+			verifyEqual.text(ft('TestData').getValue(7,34))
+		
 	}
+	Mobile.takeScreenshot('Screenshot/PastDetails/1 2.png')
+	
 }
+
+verifyEqual.text(ft('TestData').getValue(4,6))
+
 'Requested on'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 20)]), 0), ft('TestData').getValue(
-        4, 20))
+		4, 20))
 
 DateRequested = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 20)]), 0)
 
 'Recipient ref'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 21)]), 0), ft('TestData').getValue(
-        4, 21))
+		4, 21))
 
 RecipientRef = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 21)]), 0)
 
 if (Mobile.verifyElementExist(fo('Text', [('Verify') : ft('TestData').getValue(4, 22)]), 5, FailureHandling.OPTIONAL)) {
-    Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 22)]), 0), ft('TestData').getValue(
-            4, 22))
+	Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 22)]), 0), ft('TestData').getValue(
+			4, 22))
 
-    PaymentDeets = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 22)]), 0)
+	PaymentDeets = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 22)]), 0)
 }
 
+
+
+if(Status=='Expired'||Status=='Rejected') {
 'Request expiry date'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 23)]), 0), ft('TestData').getValue(
-        4, 23))
+		4, 23))
 
 ExpiryDate = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 23)]), 0)
 
+}
+
 'Duitnow autodebit details'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 24)]), 0), ft('TestData').getValue(
-        4, 24))
+		4, 24))
 
 X1 = Mobile.getDeviceWidth()/2
 Y1 = Mobile.getDeviceHeight()*0.9
@@ -128,7 +129,7 @@ Mobile.swipe(X1,Y1,X1,Y2)
 
 'Product name'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 25)]), 0), ft('TestData').getValue(
-        4, 25))
+		4, 25))
 
 ProductName = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 25)]), 0)
 
@@ -136,13 +137,13 @@ Period = Mobile.getText(fo('FollowingText1', [('Verify') : ProductName]), 0)
 
 'Frequency'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 27)]), 0), ft('TestData').getValue(
-        4, 27))
+		4, 27))
 
 FreqPay = Mobile.getText(findTestObject('Details/FollowingText2nd', [('Verify') : ft('TestData').getValue(4, 27)]), 0)
 
 'Limit per trxn'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 28)]), 0), ft('TestData').getValue(
-        4, 28))
+		4, 28))
 
 LPT = Mobile.getText(fo('Details/FollowingText2nd', [('Verify') : ft('TestData').getValue(4, 28)]), 0)
 
@@ -150,22 +151,32 @@ Mobile.verifyEqual(LPT.substring(LPT.length() - 3), '.00')
 
 'DuitNow AutoDebit ID'
 Mobile.verifyEqual(Mobile.getText(fo('Text', [('Verify') : ft('TestData').getValue(4, 29)]), 0), ft('TestData').getValue(
-        4, 29))
+		4, 29))
 
 AutoDebitID = Mobile.getText(fo('FollowingText1', [('Verify') : ft('TestData').getValue(4, 29)]), 0)
 
-if (Status!='Outgoing') {
-	Mobile.verifyElementExist(fo('Text',[('Verify'):'Approve Now']),0)
+Mobile.verifyElementNotExist(fo('Text',[('Verify'):'Approve Now']),0)
+
+if(GlobalVariable.type=='soleR'&&Status=='Expired') {
+	Mobile.verifyElementExist(fo('Text',[('Verify'):'Request Again']),0)
 	
-	verifyEqual.text('Approve Now')
-}else {
-	Mobile.verifyElementNotExist(fo('Text',[('Verify'):'Approve Now']),0)
+	verifyEqual.text('Request Again')
 }
-
-
 
 Mobile.swipe(X1,Y2,X1,Y1)
 
 Mobile.swipe(X1,Y2,X1,Y1)
 
 Mobile.tap(fo('ImageNo',[('No'):1]),0)
+
+
+
+
+
+
+
+
+
+
+
+

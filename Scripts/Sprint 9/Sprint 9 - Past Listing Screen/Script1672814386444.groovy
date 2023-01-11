@@ -125,11 +125,7 @@ if(Mobile.verifyElementExist(fo('Text',[('Verify'):'Approved']),0,FailureHandlin
 	'User doesnt have approved'
 }
 
-//if ((GlobalVariable.type == 'ind') || (GlobalVariable.type == 'soleUR')) {
-//	
-//}else {
-//	
-//}
+
 
 
 

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D31DF4C90B3337C4BA0716E2C0F0CEAE",
+  "keywordClasses": [
+    {
+      "name": "com.my.android.keyword.verifyEqual",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
